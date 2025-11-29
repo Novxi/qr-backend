@@ -1,17 +1,3 @@
-# server.py
-from fastapi import FastAPI, APIRouter, HTTPException
-from fastapi.middleware.cors import CORSMiddleware
-from dotenv import load_dotenv
-from motor.motor_asyncio import AsyncIOMotorClient  # sadece status endpointleri için
-from pathlib import Path
-from pydantic import BaseModel, Field, ConfigDict
-from typing import List, Tuple, Dict, Any, Optional
-from datetime import datetime, timezone
-import uuid
-import os
-import json
-import logging
-
 # ---------------------------------------------------------
 # ENV & PATH
 # ---------------------------------------------------------
@@ -19,74 +5,25 @@ ROOT_DIR = Path(__file__).parent
 load_dotenv(ROOT_DIR / ".env")
 
 # ---------------------------------------------------------
-# MENÜ DOSYASI (mock.js) OKUMA / YAZMA YARDIMCI FONKSİYONLARI
+# MENÜ DOSYASI (menu.json) OKUMA / YAZMA YARDIMCI FONKSİYONLARI
 # ---------------------------------------------------------
 
-MOCK_FILE = ROOT_DIR.parent / "frontend" / "src" / "mock.js"
-
-
-def _extract_menu_json(text: str) -> Tuple[Dict[str, Any], int, int]:
-    """
-    mock.js içindeki:
-        export const menuData = { ... };
-    kısmından { ... } objesini JSON olarak çıkarır.
-
-    return:
-      (data, start_idx, end_idx)
-    """
-    marker = "export const menuData ="
-    try:
-        marker_idx = text.index(marker)
-    except ValueError:
-        raise ValueError("mock.js içinde 'export const menuData =' ifadesi bulunamadı")
-
-    # marker'dan sonraki ilk { karakterini bul
-    try:
-        brace_start = text.index("{", marker_idx)
-    except ValueError:
-        raise ValueError("menuData için açılış '{' bulunamadı")
-
-    depth = 0
-    end_idx = None
-
-    for i, ch in enumerate(text[brace_start:], start=brace_start):
-        if ch == "{":
-            depth += 1
-        elif ch == "}":
-            depth -= 1
-            if depth == 0:
-                end_idx = i + 1
-                break
-
-    if end_idx is None:
-        raise ValueError("menuData objesinin kapanış '}' karakteri bulunamadı")
-
-    json_str = text[brace_start:end_idx]
-    data = json.loads(json_str)
-    return data, brace_start, end_idx
+MOCK_FILE = ROOT_DIR / "menu.json"
 
 
 def read_menu() -> Dict[str, Any]:
-    """mock.js içinden menuData'yı Python dict olarak okur."""
+    """menu.json içinden menü verisini okur."""
     if not MOCK_FILE.exists():
-        raise FileNotFoundError(f"mock.js bulunamadı: {MOCK_FILE}")
-
-    text = MOCK_FILE.read_text(encoding="utf-8")
-    data, _, _ = _extract_menu_json(text)
-    return data
+        return {}
+    with MOCK_FILE.open("r", encoding="utf-8") as f:
+        return json.load(f)
 
 
 def write_menu(new_menu: Dict[str, Any]) -> None:
-    """menuData kısmını new_menu ile değiştirip mock.js dosyasını yazar."""
-    if not MOCK_FILE.exists():
-        raise FileNotFoundError(f"mock.js bulunamadı: {MOCK_FILE}")
+    """Menü verisini menu.json dosyasına yazar."""
+    with MOCK_FILE.open("w", encoding="utf-8") as f:
+        json.dump(new_menu, f, ensure_ascii=False, indent=2)
 
-    text = MOCK_FILE.read_text(encoding="utf-8")
-    _, start, end = _extract_menu_json(text)
-
-    new_json_str = json.dumps(new_menu, ensure_ascii=False, indent=2)
-    new_text = text[:start] + new_json_str + text[end:]
-    MOCK_FILE.write_text(new_text, encoding="utf-8")
 
 
 # ---------------------------------------------------------
@@ -298,6 +235,8 @@ app.include_router(api_router)
 origins = [
     "http://localhost:3000",
     "http://127.0.0.1:3000",
+    "https://qr.sislyresort.com",
+    "http://qr.sislyresort.com",
 ]
 
 app.add_middleware(
