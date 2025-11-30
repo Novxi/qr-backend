@@ -1,8 +1,1157 @@
 {
-  "tr": {
-    "categories": []
-  },
   "en": {
-    "categories": []
+    "categories": [
+      {
+        "id": "breakfast",
+        "name": "Breakfast",
+        "subtitle": "Awaken to nature's morning embrace",
+        "motif": "dawn",
+        "items": [
+          {
+            "id": "b1",
+            "name": "Forest Mushroom Omelette",
+            "description": "Wild foraged mushrooms, aged cheddar, fresh herbs from our garden",
+            "price": 185,
+            "image": "/images/breakfast/forest-mushroom-omelette.jpg",
+            "badges": [
+              "V"
+            ],
+            "chefRec": true
+          },
+          {
+            "id": "b2",
+            "name": "Organic Açai Bowl",
+            "description": "House-made granola, seasonal berries, local honey drizzle",
+            "price": 165,
+            "image": "/images/breakfast/organic-acai-bowl.jpg",
+            "badges": [
+              "VE",
+              "GF"
+            ]
+          },
+          {
+            "id": "b3",
+            "name": "Turkish Breakfast Plateau",
+            "description": "Artisan cheeses, village olives, fresh breads, jams, menemen",
+            "price": 295,
+            "image": "/images/breakfast/turkish-breakfast-plateau.jpg"
+          },
+          {
+            "id": "b4",
+            "name": "Avocado Toast Royale",
+            "description": "Sourdough, smashed avocado, poached eggs, microgreens, truffle oil",
+            "price": 175,
+            "image": "/images/breakfast/avocado-toast-royale.jpg",
+            "badges": [
+              "V"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "soups",
+        "name": "Soups",
+        "subtitle": "Warmth distilled from ancient recipes",
+        "motif": "steam",
+        "items": [
+          {
+            "id": "s1",
+            "name": "Wild Forest Mushroom Bisque",
+            "description": "Porcini, chanterelle, truffle cream, garlic crostini",
+            "price": 145,
+            "image": "/images/soups/wild-forest-mushroom-bisque.jpg",
+            "badges": [
+              "V"
+            ],
+            "chefRec": true
+          },
+          {
+            "id": "s2",
+            "name": "Heirloom Tomato Gazpacho",
+            "description": "Chilled, with cucumber, bell pepper, basil oil",
+            "price": 125,
+            "image": "/images/soups/heirloom-tomato-gazpacho.jpg",
+            "badges": [
+              "VE",
+              "GF"
+            ]
+          },
+          {
+            "id": "s3",
+            "name": "Anatolian Lentil Soup",
+            "description": "Red lentils, cumin, lemon, mint, served with warm pide",
+            "price": 115,
+            "image": "/images/soups/anatolian-lentil-soup.jpg",
+            "badges": [
+              "VE"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "mains",
+        "name": "Main Courses",
+        "subtitle": "Culinary artistry meets forest flavors",
+        "motif": "spotlight",
+        "items": [
+          {
+            "id": "m1",
+            "name": "Wood-Fired Ribeye",
+            "description": "400g grass-fed beef, herb butter, roasted root vegetables",
+            "price": 485,
+            "image": "/images/mains/wood-fired-ribeye.jpg",
+            "chefRec": true
+          },
+          {
+            "id": "m2",
+            "name": "Mediterranean Sea Bass",
+            "description": "Whole grilled, lemon, olive oil, seasonal greens",
+            "price": 395,
+            "image": "/images/mains/mediterranean-sea-bass.jpg",
+            "badges": [
+              "GF"
+            ]
+          },
+          {
+            "id": "m3",
+            "name": "Forest Vegetable Ratatouille",
+            "description": "Slow-roasted seasonal vegetables, fresh herbs, aged balsamic",
+            "price": 245,
+            "image": "/images/mains/forest-vegetable-ratatouille.jpg",
+            "badges": [
+              "VE",
+              "GF"
+            ],
+            "chefRec": true
+          },
+          {
+            "id": "m4",
+            "name": "Lamb Shank Confit",
+            "description": "Slow-braised in red wine, rosemary jus, creamy polenta",
+            "price": 425,
+            "image": "/images/mains/lamb-shank-confit.jpg"
+          },
+          {
+            "id": "m5",
+            "name": "Wild Mushroom Risotto",
+            "description": "Carnaroli rice, porcini, parmesan, white truffle shavings",
+            "price": 285,
+            "image": "/images/mains/wild-mushroom-risotto.jpg",
+            "badges": [
+              "V"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "desserts",
+        "name": "Desserts",
+        "subtitle": "Sweet finales crafted with grace",
+        "motif": "marble",
+        "items": [
+          {
+            "id": "d1",
+            "name": "Dark Chocolate Lava Cake",
+            "description": "Molten center, vanilla bean ice cream, gold leaf",
+            "price": 165,
+            "image": "/images/desserts/dark-chocolate-lava-cake.jpg",
+            "badges": [
+              "V"
+            ],
+            "chefRec": true
+          },
+          {
+            "id": "d2",
+            "name": "Pistachio Baklava",
+            "description": "Layers of phyllo, Gaziantep pistachios, honey syrup",
+            "price": 135,
+            "image": "/images/desserts/pistachio-baklava.jpg",
+            "badges": [
+              "V",
+              "N"
+            ]
+          },
+          {
+            "id": "d3",
+            "name": "Lemon Posset",
+            "description": "Silky citrus cream, almond biscotti, fresh berries",
+            "price": 125,
+            "image": "/images/desserts/lemon-posset.jpg",
+            "badges": [
+              "V",
+              "GF"
+            ]
+          },
+          {
+            "id": "d4",
+            "name": "Seasonal Sorbet Trio",
+            "description": "Daily selection, mint garnish, edible flowers",
+            "price": 115,
+            "image": "/images/desserts/seasonal-sorbet-trio.jpg",
+            "badges": [
+              "VE",
+              "GF"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "drinks",
+        "name": "Drinks",
+        "subtitle": "Elixirs to complement your journey",
+        "motif": "crystal",
+        "items": [
+          {
+            "id": "dr1",
+            "name": "Forest Gin & Tonic",
+            "description": "Craft gin, elderflower, cucumber, tonic, rosemary sprig",
+            "price": 145,
+            "image": "/images/drinks/forest-gin-tonic.jpg"
+          },
+          {
+            "id": "dr2",
+            "name": "Turkish Wine Selection",
+            "description": "Kalecik Karası, Öküzgözü, or Narince - ask your server",
+            "price": 185,
+            "image": "/images/drinks/turkish-wine-selection.jpg",
+            "chefRec": true
+          },
+          {
+            "id": "dr3",
+            "name": "Garden Fresh Lemonade",
+            "description": "Handpressed lemons, mint, sparkling water, lavender syrup",
+            "price": 85,
+            "image": "/images/drinks/garden-fresh-lemonade.jpg",
+            "badges": [
+              "VE"
+            ]
+          },
+          {
+            "id": "dr4",
+            "name": "Turkish Coffee",
+            "description": "Traditional preparation, cardamom, served with Turkish delight",
+            "price": 65,
+            "image": "/images/drinks/turkish-coffee.jpg"
+          },
+          {
+            "id": "dr5",
+            "name": "Herbal Tea Garden",
+            "description": "Selection of mountain herbs, chamomile, sage, linden",
+            "price": 55,
+            "image": "/images/drinks/herbal-tea-garden.jpg",
+            "badges": [
+              "VE",
+              "GF"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "tr": {
+    "categories": [
+      {
+        "id": "breakfast",
+        "name": "Kahvaltı",
+        "subtitle": "Doğanın sabah kucaklamasıyla uyanın",
+        "motif": "dawn",
+        "image": "kahvalti.jpg",
+        "items": [
+          {
+            "id": "b1",
+            "name": "Serpme Kahvaltı",
+            "description": "Peynirler, zeytinler, reçeller, sıcaklar ve tazelik dolu yerel ürünlerle iki kişilik şölen.",
+            "price": 1400,
+            "image": "/images/TKN09976.webp",
+            "badges": [
+              "2 Kişilik",
+              "Paylaşımlık"
+            ],
+            "chefRec": true
+          },
+          {
+            "id": "b2",
+            "name": "Kahvaltı 2 Kişilik",
+            "description": "İki Kişilik Normal Kahvaltı",
+            "price": 850,
+            "image": "/images/kahvalti.jpg",
+            "badges": [
+              "2 Kişilik",
+              "Paylaşımlık"
+            ],
+            "chefRec": true
+          },
+          {
+            "id": "b3",
+            "name": "Patates Kavurması",
+            "description": "Tereyağında hafifçe kızarmış, baharatlı patates dilimleri.",
+            "price": 90,
+            "image": "/images/TKN00025.webp",
+            "badges": [
+              "Vejetaryen"
+            ],
+            "chefRec": false
+          },
+          {
+            "id": "b4",
+            "name": "Turşu Kavurması",
+            "description": "Karadeniz usulü, hafif ekşili ve iştah açıcı.",
+            "price": 100,
+            "image": "/images/tursu.jpg",
+            "badges": [
+              "Karadeniz"
+            ],
+            "chefRec": true
+          },
+          {
+            "id": "b5",
+            "name": "Kuymak",
+            "description": "Tereyağı ve mısır unu ile tel tel uzayan peynir lezzeti.",
+            "price": 200,
+            "image": "/images/TKN09850.webp",
+            "badges": [
+              "Karadeniz",
+              "Peynir"
+            ],
+            "chefRec": true
+          },
+          {
+            "id": "b6",
+            "name": "Menemen",
+            "description": "Domates, biber ve yumurtanın dengesini yakalayan klasik lezzet.",
+            "price": 150,
+            "image": "/images/TKN09828.webp",
+            "badges": [
+              "Vejetaryen"
+            ],
+            "chefRec": false
+          },
+          {
+            "id": "b7",
+            "name": "Kahvaltı Tabağı",
+            "description": "Tek kişilik, pratik ve doyurucu kahvaltı seçkisi.",
+            "price": 400,
+            "image": "/images/TKN00008.webp",
+            "badges": [
+              "Tek Kişilik"
+            ],
+            "chefRec": false
+          },
+          {
+            "id": "b8",
+            "name": "Cips Tabağı",
+            "description": "Paylaşımlık çıtır atıştırmalık.",
+            "price": 100,
+            "image": "/images/TKN09872.webp",
+            "badges": [
+              "Paylaşımlık"
+            ],
+            "chefRec": false
+          },
+          {
+            "id": "b9",
+            "name": "Sigara Böreği ",
+            "description": "İnce yufkada peynirli çıtır sarma.",
+            "price": 90,
+            "image": "/images/TKN09869.webp",
+            "badges": [
+              "4 Adet"
+            ],
+            "chefRec": false
+          },
+          {
+            "id": "b10",
+            "name": "Pişi",
+            "description": "Sıcak, kabarık ve yumuşacık hamur işi.",
+            "price": 90,
+            "image": "/images/TKN09858.webp",
+            "badges": [
+              "2 Adet"
+            ],
+            "chefRec": false
+          },
+          {
+            "id": "b11",
+            "name": "Kaygana",
+            "description": "Karadeniz usulü hafif omlet.",
+            "price": 100,
+            "image": "/images/TKN09862.webp",
+            "badges": [
+              "Karadeniz"
+            ],
+            "chefRec": false
+          },
+          {
+            "id": "b12",
+            "name": "Kavurmalı Yumurta",
+            "description": "Diri dokulu, hafif yağlı et ile klasik kavurma.",
+            "price": 300,
+            "image": "/images/kavurmali-yumurta-0f0878bd-0d40-4dfa-9a41-5652cd5be3c4.jpg",
+            "badges": [
+              "Protein"
+            ],
+            "chefRec": true
+          },
+          {
+            "id": "b13",
+            "name": "Kavurma",
+            "description": "Diri dokulu, hafif yağlı et ile klasik kavurma.",
+            "price": 300,
+            "image": "/images/TKN09874.webp",
+            "badges": [
+              "Protein"
+            ],
+            "chefRec": true
+          },
+          {
+            "id": "b14",
+            "name": "Peynir Tabağı",
+            "description": "Seçme peynirlerden dengeli bir tabak.",
+            "price": 100,
+            "image": "/images/peynir.webp",
+            "badges": [
+              "Vejetaryen"
+            ],
+            "chefRec": false
+          },
+          {
+            "id": "b15",
+            "name": "Zeytin Tabağı",
+            "description": "Dalından Masanıza",
+            "price": 60,
+            "image": "/images/zeytin.jpg",
+            "badges": [
+              "Vejetaryen"
+            ],
+            "chefRec": false
+          },
+          {
+            "id": "b15",
+            "name": "Sahanda Yumurta",
+            "description": "Bol Tereyağlı Tam Kıvamında",
+            "price": 100,
+            "image": "/images/TKN09867.webp",
+            "badges": [
+              "Protein"
+            ],
+            "chefRec": false
+          },
+          {
+            "id": "b16",
+            "name": "Sucuklu Yumurta",
+            "description": "Doğal Gerçek Sucuk İle",
+            "price": 250,
+            "image": "/images/sucuklu_yumurta-764e66f1-1d63-4e81-8ebd-80262c5503aa.jpg",
+            "badges": [
+              "Geleneksel"
+            ],
+            "chefRec": false
+          }
+        ]
+      },
+      {
+        "id": "soups",
+        "name": "Çorbalar",
+        "subtitle": "Kadim tariflerden damıtılmış sıcaklık",
+        "motif": "steam",
+        "image": "corba.jpg",
+        "items": [
+          {
+            "id": "s1",
+            "name": "Mercimek Çorbası",
+            "description": "Klasik usul, limonla çok yakışır.",
+            "price": 120,
+            "image": "/images/TKN09901.webp",
+            "badges": [
+              "Günlük"
+            ],
+            "chefRec": true
+          },
+          {
+            "id": "s2",
+            "name": "Kelle Paça Çorbası",
+            "description": "Dengeli kıvamı.",
+            "price": 200,
+            "image": "/images/kelle-paca-corbasi-yeni.webp",
+            "badges": [
+              "Gelenekles"
+            ],
+            "chefRec": true
+          },
+          {
+            "id": "s3",
+            "name": "Ezogelin Çorbası",
+            "description": "Baharat dengesiyle nefis bir başlangıç.",
+            "price": 120,
+            "image": "/images/TKN09898.webp",
+            "badges": [
+              "Geleneksel"
+            ],
+            "chefRec": false
+          },
+          {
+            "id": "s4",
+            "name": "Lahana Çorbası",
+            "description": "Sebzenin ferahlığı, doyurucu bir tabakta.",
+            "price": 120,
+            "image": "/images/TKN09896.webp",
+            "badges": [
+              "Sebze"
+            ],
+            "chefRec": false
+          }
+        ]
+      },
+      {
+        "id": "mains",
+        "name": "Ana Yemekler",
+        "subtitle": "Afiyetlerinizle.",
+        "motif": "spotlight",
+        "image": "et23.jpg",
+        "items": [
+          {
+            "id": "m1",
+            "name": "Izgara Akçaabat Köfte",
+            "description": "Dengeli baharat ve ızgaradan gelen dumanlı tat.",
+            "price": 400,
+            "image": "/images/TKN09817.webp",
+            "badges": [
+              "Izgara"
+            ],
+            "chefRec": true
+          },
+          {
+            "id": "m2",
+            "name": "Izgara Akçaabat Köfte 1KG",
+            "description": "Dengeli baharat ve ızgaradan gelen dumanlı tat.",
+            "price": 1700,
+            "image": "/images/TKN09817.webp",
+            "badges": [
+              "Izgara"
+            ],
+            "chefRec": true
+          },
+          {
+            "id": "m3",
+            "name": "Antrikot Izgara",
+            "description": "Sulu ve yumuşak dokulu, tam kıvamında pişirme.",
+            "price": 500,
+            "image": "/images/TKN09792.webp",
+            "badges": [
+              "Izgara",
+              "Şef Tercihi"
+            ],
+            "chefRec": true
+          },
+          {
+            "id": "m4",
+            "name": "Biftek",
+            "description": "Sulu ve yumuşak dokulu, tam kıvamında pişirme.",
+            "price": 550,
+            "image": "/images/TKN09792.webp",
+            "badges": [
+              "Izgara",
+              "Şef Tercihi"
+            ],
+            "chefRec": true
+          },
+          {
+            "id": "m5",
+            "name": "Biftek 1KG",
+            "description": "Sulu ve yumuşak dokulu, tam kıvamında pişirme.",
+            "price": 2000,
+            "image": "/images/TKN09792.webp",
+            "badges": [
+              "Izgara",
+              "Şef Tercihi"
+            ],
+            "chefRec": true
+          },
+          {
+            "id": "m6",
+            "name": "Tavuk Sote",
+            "description": "Sebzelerle wok usulü, hafif ve lezzetli.",
+            "price": 400,
+            "image": "/images/TKN09883.webp",
+            "badges": [
+              "Tavuk"
+            ],
+            "chefRec": true
+          },
+          {
+            "id": "m7",
+            "name": "Saç Kavurma",
+            "description": "Döküm sacda mühürlenmiş aromatik lokmalar.",
+            "price": 500,
+            "image": "/images/TKN09812.webp",
+            "badges": [
+              "Paylaşımlık"
+            ],
+            "chefRec": true
+          },
+          {
+            "id": "m8",
+            "name": "Kuzu Pirzola",
+            "description": "Dışı kıtır içi sulu, tam ısısında ızgara.",
+            "price": 550,
+            "image": "/images/TKN09804.webp",
+            "badges": [
+              "Izgara"
+            ],
+            "chefRec": true
+          },
+          {
+            "id": "m9",
+            "name": "Kuzu Pirzola 1 KG",
+            "description": "Dışı kıtır içi sulu, tam ısısında ızgara.",
+            "price": 2000,
+            "image": "/images/TKN09804.webp",
+            "badges": [
+              "Izgara"
+            ],
+            "chefRec": true
+          },
+          {
+            "id": "m10",
+            "name": "Bonfile",
+            "description": "Yumuşacık doku, minimal baharat.",
+            "price": 500,
+            "image": "/images/TKN09795.webp",
+            "badges": [
+              "Izgara"
+            ],
+            "chefRec": true
+          },
+          {
+            "id": "m11",
+            "name": "Bonfile 1 KG",
+            "description": "Yumuşacık doku, minimal baharat.",
+            "price": 2100,
+            "image": "/images/TKN09795.webp",
+            "badges": [
+              "Izgara"
+            ],
+            "chefRec": true
+          },
+          {
+            "id": "m12",
+            "name": "Tavuk Izgara",
+            "description": "Marine edilmiş but/ göğüs parçaları, sulu ızgara.",
+            "price": 450,
+            "image": "/images/TKN09822.webp",
+            "badges": [
+              "Izgara"
+            ],
+            "chefRec": false
+          },
+          {
+            "id": "m13",
+            "name": "Tavuk Izgara 1KG",
+            "description": "Marine edilmiş but/ göğüs parçaları, sulu ızgara.",
+            "price": 1200,
+            "image": "/images/TKN09822.webp",
+            "badges": [
+              "Izgara"
+            ],
+            "chefRec": false
+          },
+          {
+            "id": "m14",
+            "name": "Pilav",
+            "description": "Kavrulmuş Pİlav",
+            "price": 90,
+            "image": "/images/TKN09888.webp",
+            "badges": [
+              "Izgara"
+            ],
+            "chefRec": false
+          }
+        ]
+      },
+      {
+        "id": "fish",
+        "name": "Balıklar",
+        "subtitle": "Taze deniz ürünleri ustalıkla pişirilir",
+        "motif": "wave",
+        "image": "balik.jpg",
+        "items": [
+          {
+            "id": "f2",
+            "name": "Alabalık",
+            "description": "Tereyağında ya da ılık tavada hafif pişirim.",
+            "price": 400,
+            "image": "/images/ala.webp",
+            "badges": [
+              "Sıcak"
+            ],
+            "chefRec": false
+          },
+          {
+            "id": "f3",
+            "name": "Hamsi Tava",
+            "description": "Mısır unuyla altın sarısı çıtırlık.",
+            "price": 450,
+            "image": "/images/TKN00007.webp",
+            "badges": [
+              "Karadeniz",
+              "Çıtır"
+            ],
+            "chefRec": true
+          },
+          {
+            "id": "f4",
+            "name": "Levrek Buğulama",
+            "description": "Sebzelerle buğuda, hafif ve aromatik.",
+            "price": 650,
+            "image": "/images/TKN09993.webp",
+            "badges": [
+              "Hafif",
+              "Balık"
+            ],
+            "chefRec": false
+          },
+          {
+            "id": "f5",
+            "name": "Levrek Buğulama Kaşarlı",
+            "description": "Üstü hafifçe kızarmış kaşar ile zenginleşen buğulama.",
+            "price": 700,
+            "image": "/images/TKN00019.webp",
+            "badges": [
+              "Kaşarlı",
+              "Özel"
+            ],
+            "chefRec": true
+          },
+          {
+            "id": "f6",
+            "name": "Hamsi Çıtlama",
+            "description": "İnce kaplama ile ekstra çıtırlık.",
+            "price": 400,
+            "image": "/images/TKN00003.webp",
+            "badges": [
+              "Çıtır",
+              "Atıştırmalık"
+            ],
+            "chefRec": false
+          },
+          {
+            "id": "f7",
+            "name": "Levrek Izgara",
+            "description": "Tazelik ve hafiflik arayanlara, odak noktası: ızgaranın tadı.",
+            "price": 600,
+            "image": "/images/levro.png",
+            "badges": [
+              "Izgara",
+              "Balık"
+            ],
+            "chefRec": true
+          },
+          {
+            "id": "f8",
+            "name": "Hamsi Buğlama",
+            "description": "Hamsinin En iyi Hali",
+            "price": 500,
+            "image": "/images/TKN00003.webp",
+            "badges": [
+              "Balık"
+            ],
+            "chefRec": true
+          }
+        ]
+      },
+      {
+        "id": "toasts",
+        "name": "Fast Food",
+        "subtitle": "Klasik lezzetlerin en sıcak hali",
+        "motif": "grill",
+        "image": "tost.jpg",
+        "items": [
+          {
+            "id": "t1",
+            "name": "Kaşarlı Tost",
+            "description": "Bol eriyen kaşar peyniri ile hazırlanır.",
+            "price": 250,
+            "image": "/images/kasarli-tost-dcb9.jpg",
+            "badges": [
+              "Sıcak",
+              "Peynir"
+            ],
+            "chefRec": false
+          },
+          {
+            "id": "t2",
+            "name": "Karışık Tost",
+            "description": "Kaşar ve şarküteri dilimleri ile doyurucu.",
+            "price": 250,
+            "image": "/images/karisik-tost-e192.jpg",
+            "badges": [
+              "Sıcak"
+            ],
+            "chefRec": true
+          },
+          {
+            "id": "t3",
+            "name": "Çift Kaşarlı Tost",
+            "description": "Ekstra peynir, ekstra mutluluk.",
+            "price": 250,
+            "image": "/images/kasarli-tost_1709107608.jpg",
+            "badges": [
+              "Sıcak",
+              "Bol Peynir"
+            ],
+            "chefRec": false
+          },
+          {
+            "id": "t4",
+            "name": "Sucuklu Tost",
+            "description": "Dana sucuk ve eriyen kaşarın nefis uyumu.",
+            "price": 300,
+            "image": "/images/sucuklu-kasarli-tost-9e4c.webp",
+            "badges": [
+              "Sıcak"
+            ],
+            "chefRec": true
+          },
+          {
+            "id": "t5",
+            "name": "Hamburger",
+            "description": "Izgara köfte ve cheddar ile klasik burger.",
+            "price": 300,
+            "image": "/images/6_44.jpg",
+            "badges": [
+              "Atıştırmalık"
+            ],
+            "chefRec": false
+          }
+        ]
+      },
+      {
+        "id": "desserts",
+        "name": "Tatlılar",
+        "subtitle": "Zarafetle hazırlanmış tatlı finaller",
+        "motif": "marble",
+        "image": "tatlı.jpg",
+        "items": [
+          {
+            "id": "d1",
+            "name": "Sütlaç",
+            "description": "Fırın aromasını taşıyan hafif sütlü tat.",
+            "price": 125,
+            "image": "/images/sutlac.webp",
+            "badges": [
+              "Geleneksel"
+            ],
+            "chefRec": true
+          },
+          {
+            "id": "d2",
+            "name": "Baklava",
+            "description": "İncecik katmanlar ve dengeli şerbet.",
+            "price": 100,
+            "image": "/images/TKN00013.webp",
+            "badges": [
+              "Geleneksel"
+            ],
+            "chefRec": true
+          },
+          {
+            "id": "d3",
+            "name": "Künefe",
+            "description": "Şerbetle Kaşarın Mükemmel Lezzeti.",
+            "price": 200,
+            "image": "/images/künefe.jpg",
+            "badges": [
+              "Geleneksel"
+            ],
+            "chefRec": true
+          }
+        ]
+      },
+      {
+        "id": "salads",
+        "name": "Salatalar",
+        "subtitle": "Lezzetli Salatalarımız",
+        "motif": "marble",
+        "image": "salata.webp",
+        "items": [
+          {
+            "id": "s1",
+            "name": "Çoban Salata",
+            "description": "Lezzetli Sebzeler.",
+            "price": 150,
+            "image": "/images/TKN09878.webp",
+            "badges": [
+              "Geleneksel"
+            ],
+            "chefRec": true
+          },
+          {
+            "id": "s2",
+            "name": "Çoban Salata Büyük",
+            "description": "Lezzetli Sebzeler.",
+            "price": 200,
+            "image": "/images/TKN09878.webp",
+            "badges": [
+              "Geleneksel"
+            ],
+            "chefRec": true
+          },
+          {
+            "id": "s3",
+            "name": " Karışık Salata",
+            "description": "Bol Yeşillikler.",
+            "price": 150,
+            "image": "/images/salata.webp",
+            "badges": [
+              "Ev Yapımı"
+            ],
+            "chefRec": true
+          },
+          {
+            "id": "s4",
+            "name": " Karışık Salata Büyük",
+            "description": "Bol Yeşillikler.",
+            "price": 200,
+            "image": "/images/salata.webp",
+            "badges": [
+              "Ev Yapımı"
+            ],
+            "chefRec": true
+          },
+          {
+            "id": "s5",
+            "name": "Piyaz",
+            "description": "Fasulyenin en iyisi",
+            "price": 150,
+            "image": "/images/TKN09783.webp",
+            "badges": [
+              "Geleneksel"
+            ],
+            "chefRec": true
+          },
+          {
+            "id": "s6",
+            "name": "Piyaz Büyük",
+            "description": "Fasulyenin en iyisi",
+            "price": 200,
+            "image": "/images/TKN09783.webp",
+            "badges": [
+              "Geleneksel"
+            ],
+            "chefRec": true
+          }
+        ]
+      },
+      {
+        "id": "hot-drinks",
+        "name": "Sıcak İçecekler",
+        "subtitle": "İçinizi ısıtan özenle hazırlanmış lezzetler",
+        "motif": "steam",
+        "image": "sıcak.jpg",
+        "items": [
+          {
+            "id": "h1",
+            "name": "Çay",
+            "description": "Taze demlenmiş, ince belli bardakta.",
+            "price": 25,
+            "image": "/images/ac-karnina-cay-icmek-zararli-mi-fe626678-237e-4407-a88e-5693bf434a71.jpg",
+            "badges": [
+              "Sıcak"
+            ],
+            "chefRec": false
+          },
+          {
+            "id": "h2",
+            "name": "Türk Kahvesi",
+            "description": "Yoğun gövde, dengeli köpük.",
+            "price": 90,
+            "image": "/images/TKN00021.webp",
+            "badges": [
+              "Sıcak",
+              "Klasik"
+            ],
+            "chefRec": true
+          },
+          {
+            "id": "h3",
+            "name": "Nescafe",
+            "description": "Hızlı ve yumuşak içimli.",
+            "price": 75,
+            "image": "/images/nescafes-red-mug-on-background-260nw-1686331396.webp",
+            "badges": [
+              "Sıcak"
+            ],
+            "chefRec": false
+          },
+          {
+            "id": "h4",
+            "name": "Termos Çay",
+            "description": "Paylaşımlık sıcak çay keyfi.",
+            "price": 200,
+            "image": "/images/91ppPChqjOL.jpg",
+            "badges": [
+              "Paylaşımlık",
+              "Sıcak"
+            ],
+            "chefRec": false
+          }
+        ]
+      },
+      {
+        "id": "drinks",
+        "name": "Soğuk İçecekler",
+        "subtitle": "Yolculuğunuzu tamamlayacak iksirler",
+        "motif": "crystal",
+        "image": "soguk.jpg",
+        "items": [
+          {
+            "id": "dr1",
+            "name": "Ayran",
+            "description": "Fermente yoğurt içeceği, serinletir.",
+            "price": 40,
+            "image": "/images/ayran.jpg",
+            "badges": [
+              "Soğuk"
+            ]
+          },
+          {
+            "id": "dr2",
+            "name": "Sprite",
+            "description": "Limon aromalı gazlı içecek.",
+            "price": 80,
+            "image": "/images/360_F_286268644_FJxZ9RW8bXWWiaZgKajwnwEZ61ynkfOp.jpg",
+            "badges": [
+              "Soğuk"
+            ]
+          },
+          {
+            "id": "dr3",
+            "name": "Cappy Kayısı",
+            "description": "Meyve püresi yoğunluklu içecek.",
+            "price": 80,
+            "image": "/images/cappy-kayisi.jpg",
+            "badges": [
+              "Meyve"
+            ]
+          },
+          {
+            "id": "dr4",
+            "name": "Soda",
+            "description": "Doğal mineralli serinlik.",
+            "price": 40,
+            "image": "/images/soda.jpg",
+            "badges": [
+              "Soğuk"
+            ]
+          },
+          {
+            "id": "dr5",
+            "name": "Ayran Sürahi (4 Kişilik)",
+            "description": "Paylaşımlık, sofraya uygun.",
+            "price": 150,
+            "image": "/images/909-kucuksurahiayran.jpg",
+            "badges": [
+              "Paylaşımlık"
+            ]
+          },
+          {
+            "id": "dr6",
+            "name": "Şalgam",
+            "description": "Ekşi ve ferahlatıcı yöresel içecek.",
+            "price": 60,
+            "image": "/images/doganay salgam6929.jpg",
+            "badges": [
+              "Yöresel"
+            ]
+          },
+          {
+            "id": "dr7",
+            "name": "FuseTea Mango Ananas",
+            "description": "Tropikal dokunuşlu demleme çay.",
+            "price": 80,
+            "image": "/images/YVZ_0959_copy.jpg",
+            "badges": [
+              "Soğuk"
+            ]
+          },
+          {
+            "id": "dr8",
+            "name": "Cappy Karışık",
+            "description": "Çeşitli meyvelerin dengeli karışımı.",
+            "price": 80,
+            "image": "/images/91ba0f8a-ddc2-48d6-817b-48b1aa2da9ed-medium.jpg",
+            "badges": [
+              "Meyve"
+            ]
+          },
+          {
+            "id": "dr9",
+            "name": "FuseTea Şeftali",
+            "description": "Şeftali aromalı soğuk çay.",
+            "price": 80,
+            "image": "/images/Fuse-Tea-Seftali-33-cl-scaled.jpg",
+            "badges": [
+              "Soğuk"
+            ]
+          },
+          {
+            "id": "dr10",
+            "name": "Coca Cola ZERO",
+            "description": "Şekersiz gazlı içecek (kutu).",
+            "price": 80,
+            "image": "/images/coca-cola-zero.jpg",
+            "badges": [
+              "Kutu"
+            ]
+          },
+          {
+            "id": "dr11",
+            "name": "Fanta",
+            "description": "Portakal aromalı gazlı içecek (kutu).",
+            "price": 80,
+            "image": "/images/desktop-wallpaper-fanta.jpg",
+            "badges": [
+              "Kutu"
+            ]
+          },
+          {
+            "id": "dr12",
+            "name": "Büyük Su",
+            "description": "Serin ve saf.",
+            "price": 30,
+            "image": "/images/SU-ICIYORMUYUZ.jpg",
+            "badges": [
+              "Soğuk"
+            ]
+          },
+          {
+            "id": "dr13",
+            "name": "Coca Cola Classic",
+            "description": "Klasik lezzet (kutu).",
+            "price": 80,
+            "image": "/images/media.avif",
+            "badges": [
+              "Kutu"
+            ]
+          },
+          {
+            "id": "dr14",
+            "name": "Küçük Su",
+            "description": "Pratik boy.",
+            "price": 15,
+            "image": "/images/pexels-photo-416528.webp",
+            "badges": []
+          },
+          {
+            "id": "dr15",
+            "name": "Meyveli Soda",
+            "description": "Lezzetli Soda.",
+            "price": 40,
+            "image": "/images/pexels-photo-416528.webp",
+            "badges": []
+          }
+        ]
+      }
+    ]
   }
 }
