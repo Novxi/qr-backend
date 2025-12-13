@@ -101,6 +101,7 @@ class StatusCheckCreate(BaseModel):
 # --------- REZERVASYON MODELLERİ ---------
 
 from typing import List, Tuple, Dict, Any, Optional  # en üstte Optional zaten ekli
+from pydantic import BaseModel, model_validator
 
 class ReservationBase(BaseModel):
     name: str                       # Müşteri adı
@@ -111,7 +112,15 @@ class ReservationBase(BaseModel):
     type: str                       # "kahvaltı" / "yemek" vb.
     note: Optional[str] = None      # Opsiyonel not
 
-
+@model_validator(mode="before")
+@classmethod
+def map_phone(cls, data):
+        if isinstance(data, dict) and not data.get("phone"):
+            for k in ("telefon", "phoneNumber", "tel", "mobile"):
+                if data.get(k):
+                    data["phone"] = data[k]
+                    break
+        return data
 
 class Reservation(ReservationBase):
     id: str = Field(default_factory=lambda: str(uuid.uuid4()))
